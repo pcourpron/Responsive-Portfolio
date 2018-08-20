@@ -1,0 +1,211 @@
+#navbar {
+    padding: 0 10%;
+    height: 10%;
+    z-index: 10;
+}
+
+#navbar-brand{
+    background-color: aqua;
+    padding: 20px
+}
+#body, html{
+    height: 100%;
+    margin:0;
+    background-color: lemonchiffon;
+}
+#my_pic {
+    height:175px;
+    width: 250px;
+    float:left;
+    margin: 10px 0px;
+}
+
+
+
+.break {
+    width: 95%;
+    border: solid;
+    border-width: 1px;
+    margin: 10px auto;
+    position: relative;
+}
+
+p {
+    margin: 5px;
+}
+
+#footer {
+    width: 100%;
+    height: 40px;
+    border: solid;
+    border-color: white;
+    text-align: center;
+    background-color: grey;
+    margin:0px;
+    position: fixed;
+    bottom: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+
+}
+
+.horizontal-flex-1 {
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.horizontal-flex {
+    width: 70%;
+    margin: 100px auto 0 ;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    
+  
+
+}
+.vertical-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:0%;
+    margin-left: 0;
+    justify-content: space-evenly;
+    max-height: 800px;
+    
+}
+
+figure {
+    height: 175px;
+    width:250px;
+    margin:0px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    margin:0;
+    padding:1px;
+    width: 100%;
+    opacity: 1;
+    background-color: #008CBA;
+    text-align: center;
+  }
+
+  .my_name {
+    padding: 20px 5px;
+    background-color: lightblue;
+    color: black;
+    font-size: 30px;
+
+
+}
+
+.links{
+    height: 100%;
+    color: black;
+    align-content: center;
+    padding: 30px 5px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .horizontal-flex{
+        
+        
+        margin-left: 10px;
+        margin-right: 20%;
+        min-width: 580px;
+    }
+
+    .links{
+        float:right;
+    }
+
+   
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .vertical-flex{
+        
+        width:90%;
+        
+    }
+    figure {
+    height: 175px;
+    width:200px;
+    }
+    #my_pic {
+        height: 175px;
+    width:200px;
+    }
+    .horizontal-flex{
+        
+        
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 90%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .horizontal-flex{
+        margin: 200px auto 0;
+        width:90%;
+        
+    
+
+    }
+    .vertical-flex{
+        clear: both;
+        content: "";
+        display: table;
+    }
+    
+    
+    #my_pic{
+        height: 250px;
+        width:100%;
+        
+
+    }
+    p {
+        clear:both;
+        background-color:white;
+        z-index: 100;
+    }
+    .my_name{
+        width:100%;
+        text-align: center
+    }
+    .horizontal-flex-1{
+        flex-wrap: wrap;
+    
+    }
+    figure{
+        height:250px;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .overlay{
+        
+        top:none
+    }
+    img{
+        margin-top:0;
+        hei
+    }
+}
+    
+    
